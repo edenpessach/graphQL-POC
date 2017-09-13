@@ -4,6 +4,8 @@
   "description": "Creating a POC for graphQL - Cloudify Hackathon",
   "main": "index.js",
   "scripts": {
+    "server": "nodemon backend/server.js",
+    "json": "json-server --watch backend/data.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -20,9 +22,18 @@
   },
   "homepage": "https://github.com/edenpessach/graphQL-POC#readme",
   "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.4",
+    "express-graphql": "^0.6.11",
     "graphql": "^0.11.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "json-server": "^0.12.0",
+    "lodash": "^4.17.4",
+    "nodemon": "^1.12.0"
   }
 }
